@@ -12,7 +12,7 @@ description: Citizen journalist with style
 #
 
 # URL of your avatar or profile pic (you could use your GitHub profile pic)
-avatar: https://fromendworld.github.io/dailyplanet/images/dp-logo.png
+avatar: # https://fromendworld.github.io/dailyplanet/images/dp-logo.png
 
 # URL of your favicon
 favicon: https://fromendworld.github.io/dailyplanet/images/dp-icon.png

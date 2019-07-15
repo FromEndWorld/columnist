@@ -8,17 +8,18 @@
       <div class="site-info">
         <h1 class="site-name"><a href="{{ site.baseurl }}/">{{ site.name }}</a></h1>
         <span class="site-description">{{ site.description }}</span>
-
-        <nav>
-          {% for nav in site.navigation %}
-          {% if nav.url contains 'http://' or nav.url contains 'https://' %}
-          <a href="{{ nav.url }}">{{ nav.name }}</a>
-          {% else %}
-          <a href="{{ site.baseurl }}{{ nav.url }}">{{ nav.name }}</a>
-          {% endif %}
-          {% endfor %}
-        </nav>
       </div>
+
+      <nav>
+        {% for nav in site.navigation %}
+        {% if nav.url contains 'http://' or nav.url contains 'https://' %}
+        <a href="{{ nav.url }}">{{ nav.name }}</a>
+        {% else %}
+        <a href="{{ site.baseurl }}{{ nav.url }}">{{ nav.name }}</a>
+        {% endif %}
+        {% endfor %}
+      </nav>
+      
 
     </header>
   </div>
