@@ -377,6 +377,8 @@ img {
 .site-description {
   line-height: 24px;
   font-style: italic;
+  font-family: $title-font;
+  color: $base-lighten-color;
 
   @include mobile {
     display: none;
@@ -388,6 +390,8 @@ img {
   line-height: 24px;
   border-bottom: 4px double $base-color;
   padding: 12px 0;
+  position: relative;
+  z-index: 10;
 }
 
 time {
@@ -397,6 +401,7 @@ time {
 nav {
   float: right;
   text-transform: uppercase;
+  color: $base-color;
 
   @include mobile {
     float: none;
