@@ -21,17 +21,16 @@ $georgia: Georgia, serif;
 
 // Fonts
 
-@font-face{ 
+@font-face {
 	font-family: 'plainblackwidenormal';
-	src: url('https://github.com/FromEndWorld/columnist/blob/master/fonts/Plain_Black_Wide-webfont.ttf') format('truetype'), 
-	url('https://github.com/FromEndWorld/columnist/blob/master/fonts/Plain_Black_Wide-webfont.woff') format('woff');
-}
-
-@font-face{ 
+	src: url("https://raw.githubusercontent.com/FromEndWorld/columnist/master/fonts/Plain_Black_Wide-webfont.ttf?raw=true") format("truetype"), 
+	url("https://github.com/FromEndWorld/columnist/master/fonts/Plain_Black_Wide-webfont.woff?raw=true") format("woff");
+  }
+  @font-face {
 	font-family: 'incisedblackwidenormal';
-	src: url('https://github.com/FromEndWorld/columnist/blob/master/fonts/Incised_Black_Wide-webfont.ttf') format('truetype'),
-	url('https://github.com/FromEndWorld/columnist/blob/master/fonts/Incised_Black_Wide-webfont.woff') format('woff');
-}
+	src: url("https://raw.githubusercontent.com/FromEndWorld/columnist/master/fonts/Incised_Black_Wide-webfont.ttf") format("truetype"), 
+	url("https://raw.githubusercontent.com/FromEndWorld/columnist/master/fonts/Incised_Black_Wide-webfont.woff") format("woff");
+  }
 
 
 
