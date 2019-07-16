@@ -23,18 +23,20 @@ $georgia: Georgia, serif;
 
 @font-face{ 
 	font-family: 'plainblackwidenormal';
-	src: url('/fonts/Plain_Black_Wide-webfont.woff') format('woff');
+	src: url('../fonts/Plain_Black_Wide-webfont.ttf') format('truetype'), 
+	url('../fonts/Plain_Black_Wide-webfont.woff') format('woff');
 }
 
 @font-face{ 
 	font-family: 'incisedblackwidenormal';
-	src: url('/fonts/Incised_Black_Wide-webfont.woff') format('woff');
+	src: url('../fonts/Incised_Black_Wide-webfont.ttf') format('truetype'),
+	url('../fonts/Incised_Black_Wide-webfont.woff') format('woff');
 }
 
 
 
-$masthead-font-desktop: 'plainblackwidenormal';
-$masthead-font-mobile: 'incisedblackwidenormal';
+$masthead-font-mobile: 'plainblackwidenormal';
+$masthead-font-desktop: 'incisedblackwidenormal';
 $title-font: 'Merriweather' source-han-serif-sc, "Source Han Serif SC", "Source Han Serif CN", "Source Han Serif TC", "Source Han Serif TW", "Source Han Serif", "STSong", "Songti SC", "SimSun", "Microsoft YaHei", serif;
 $text-font: 'Open Sans','Helvetica Neue', Arial, 'Hiragino Sans GB','Microsoft YaHei','WenQuanYi Micro Hei',sans-serif;
 $code-font: 'Menlo', 'Courier New', 'Monaco', 'Spoqa Han Sans', monospace;
