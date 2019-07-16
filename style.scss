@@ -385,7 +385,7 @@ img {
 .daily {
   font-family: $title-font;
   line-height: 24px;
-  border-bottom: 4px double #111;
+  border-bottom: 4px double $base-color;
   padding: 12px 0;
 }
 
