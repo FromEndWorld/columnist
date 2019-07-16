@@ -354,6 +354,7 @@ img {
   text-align: center;
   position: relative;
   top: 36px;
+  text-transform: capitalize;
 
   @include mobile {
     float: none;
@@ -395,20 +396,20 @@ time {
 
 nav {
   float: right;
+  text-transform: uppercase;
 
   @include mobile {
     float: none;
     margin-top: 9px;
     display: block;
-    font-size: 16px;
   }
 
   a {
     margin-left: 20px;
-    color: $oc-gray-6;
     text-align: right;
     font-weight: 300;
     letter-spacing: 1px;
+    cursor: pointer;
 
     @include mobile {
       margin: 0 10px;
