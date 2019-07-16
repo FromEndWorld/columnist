@@ -401,7 +401,7 @@ time {
 nav {
   float: right;
   text-transform: uppercase;
-  color: $base-color;
+  
 
   @include mobile {
     float: none;
@@ -415,6 +415,7 @@ nav {
     font-weight: 300;
     letter-spacing: 1px;
     cursor: pointer;
+    color: $base-color;
 
     @include mobile {
       margin: 0 10px;
