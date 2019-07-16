@@ -21,12 +21,18 @@ html {
 body {
   font-family: $text-font;
   color: $base-color;
-  line-height: 1.7em;
+  line-height: 1.6em;
+  /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#ffffff+0,f2f2f2+100 */
+  background: -moz-linear-gradient(top,  #ffffff 0%, #f2f2f2 100%); /* FF3.6-15 */
+  background: -webkit-linear-gradient(top,  #ffffff 0%,#f2f2f2 100%); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to bottom,  #ffffff 0%,#f2f2f2 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#f2f2f2',GradientType=0 ); /* IE6-9 */
+
 }
 
 .container {
   margin: 0 auto;
-  max-width: 800px;
+  max-width: 1000px;
   padding: 0 16px;
   width: 100%;
 }
@@ -319,7 +325,7 @@ img {
 }
 
 .masthead {
-  padding: 20px 0 10px;
+  margin-top: -20px;
 
   @include mobile {
     text-align: center;
@@ -345,11 +351,9 @@ img {
 }
 
 .site-info {
-  float: none;
-  border-top: 1px solid $oc-gray-7;
-  border-bottom: 1px solid $oc-gray-7;
-  margin: 20px -60px 0;
-  padding: 0 60px;
+  text-align: center;
+  position: relative;
+  top: 36px;
 
   @include mobile {
     float: none;
@@ -360,36 +364,37 @@ img {
 }
 
 .site-name {
-  display:inline-block;
-  margin: 5px 0 0;
-  color: $oc-gray-9;
-  cursor: pointer;
-  font-family: $title-font;
-  font-weight: bold;
-  font-size: 24px;
+  font-family:$masthead-font-desktop;
+  font-weight:300;
+  font-size: 40px;
+  line-height: 48px;
+  margin: 10px;
   letter-spacing: 1px;
-  line-height: 40px;
+  cursor: pointer;
 }
 
 .site-description {
-  margin: 0 0 0 12px;
-  color: $oc-gray-6;
-  font-size: 16px;
-  display: inline-block;
-  line-height: 40px;
+  line-height: 24px;
+  font-style: italic;
 
   @include mobile {
     display: none;
   }
 }
 
+.daily {
+  font-family: $title-font;
+  line-height: 24px;
+  border-bottom: 4px double #111;
+  padding: 12px 0;
+}
+
+time {
+  font-weight: bold;
+}
+
 nav {
   float: right;
-  // margin-top: 23px; // @TODO: Vertically middle align
-  font-family: $title-font;
-  font-size: 18px;
-  line-height: 40px;
-  margin-top: 6px;
 
   @include mobile {
     float: none;
@@ -690,75 +695,3 @@ footer {
 // ... Otherwise it really bloats up the top of the CSS file and makes it difficult to find the start
 @import "highlights";
 
-
-
-
-
-/* style.css | https://fromendworld.github.io/columnist/style.css */
-
-.site-info {
-  /* float: none; */
-  /* border-top: 1px solid #495057; */
-  /* border-bottom: 1px solid #495057; */
-  /* margin: 20px -60px 0; */
-  /* padding: 0 60px; */
-  text-align: center;
-  font-family: "plainblack";
-  position: relative;
-  top: 36px;
-  font-family: Optima, "Lucida Sans", source-han-serif-sc, "Source Han Serif SC", "Source Han Serif CN", "Source Han Serif TC", "Source Han Serif TW", "Source Han Serif", "STSong", "Songti SC", "SimSun", "Microsoft YaHei", sans-serif;
-}
-
-.site-name {
-  /* display: inline-block; */
-  /* margin: 5px 0 0; */
-  /* font-size: 24px; */
-  /* letter-spacing: 1px; */
-  /* line-height: 40px; */
-  /* font-family: ""; */
-  /* line-height: ""; */
-  /* line-height: "6"; */
-  /* line-height: "60"; */
-  font-weight: 300;
-  font-size: 40px;
-  line-height: 48px;
-  font-family: "IncisedBlackWide";
-  margin: 10px;
-}
-
-.site-description {
-  /* margin: 0 0 0 12px; */
-  /* line-height: 40px; */
-  line-height: 24px;
-  font-style: italic;
-}
-
-nav {
-  /* font-family: Optima, "Lucida Sans", source-han-serif-sc, "Source Han Serif SC", "Source Han Serif CN", "Source Han Serif TC", "Source Han Serif TW", "Source Han Serif", "STSong", "Songti SC", "SimSun", "Microsoft YaHei", sans-serif; */
-  /* font-size: 18px; */
-  /* line-height: 40px; */
-  /* margin-top: 6px; */
-}
-
-.masthead {
-  /* padding: 20px 0 10px; */
-  margin-top: -20px;
-}
-
-/* 内联 #2 | https://fromendworld.github.io/columnist/ */
-
-.daily {
-  font-family: Optima, "Lucida Sans", source-han-serif-sc, "Source Han Serif SC", "Source Han Serif CN", "Source Han Serif TC", "Source Han Serif TW", "Source Han Serif", "STSong", "Songti SC", "SimSun", "Microsoft YaHei", sans-serif;
-  line-height: 24px;
-}
-
-time {
-  font-weight: bold;
-}
-
-.daily {
-  /* position: absolute; */
-  /* width: 100%; */
-  border-bottom: 4px double #111;
-  padding: 12px 0;
-}
