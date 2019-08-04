@@ -26,7 +26,7 @@ $georgia: Georgia, serif;
 	src: url("https://raw.githubusercontent.com/FromEndWorld/columnist/master/fonts/Plain_Black_Wide-webfont.ttf?raw=true") format("truetype"), 
 	url("https://github.com/FromEndWorld/columnist/master/fonts/Plain_Black_Wide-webfont.woff?raw=true") format("woff");
   }
-  @font-face {
+@font-face {
 	font-family: 'incisedblackwidenormal';
 	src: url("https://raw.githubusercontent.com/FromEndWorld/columnist/master/fonts/Incised_Black_Wide-webfont.ttf") format("truetype"), 
 	url("https://raw.githubusercontent.com/FromEndWorld/columnist/master/fonts/Incised_Black_Wide-webfont.woff") format("woff");
@@ -36,8 +36,8 @@ $georgia: Georgia, serif;
 
 $masthead-font-mobile: 'plainblackwidenormal';
 $masthead-font-desktop: 'incisedblackwidenormal';
-$title-font: source-han-serif-sc, "Source Han Serif SC", "Source Han Serif CN", "Source Han Serif TC", "Source Han Serif TW", "Source Han Serif", 'Merriweather', "STSong",  "Songti SC", "SimSun", serif;
-$text-font: 'Open Sans','Helvetica Neue', Arial, 'Hiragino Sans GB','Microsoft YaHei','WenQuanYi Micro Hei',sans-serif;
+$serif-font: 'Merriweather', source-han-serif-sc, "Source Han Serif SC", "Source Han Serif CN", "Source Han Serif TC", "Source Han Serif TW", "Source Han Serif", "STSong", "Songti SC", "SimSun", "Microsoft YaHei", serif;
+$sans-font: 'Open Sans','Helvetica Neue', Arial, 'Hiragino Sans GB','Microsoft YaHei','WenQuanYi Micro Hei',sans-serif;
 $code-font: 'Menlo', 'Courier New', 'Monaco', 'Spoqa Han Sans', monospace;
 
 // Font sizes
