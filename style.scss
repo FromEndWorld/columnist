@@ -19,7 +19,7 @@ html {
 }
 
 body {
-  font-family: $text-font;
+  font-family: $serif-font;
   color: $base-color;
   line-height: 1.6em;
   /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#ffffff+0,f2f2f2+100 */
@@ -41,7 +41,7 @@ h1, h2, h3, h4, h5, h6 {
   line-height: 2em;
   margin: 1em 0 16px;
   padding: 0;
-  font-family: $title-font;
+  font-family: $serif-font;
 
   @include mobile {
     line-height: 1.7em;
@@ -80,7 +80,7 @@ h6 {
 p {
   color: $text-color;
   margin: 15px 0;
-  font-family: $text-font;
+  font-family: $serif-font;
 }
 
 a {
@@ -377,7 +377,7 @@ img {
 .site-description {
   line-height: 24px;
   font-style: italic;
-  font-family: $title-font;
+  font-family: $serif-font;
   color: $base-lighten-color;
 
   @include mobile {
@@ -386,7 +386,7 @@ img {
 }
 
 .daily {
-  font-family: $title-font;
+  font-family: $serif-font;
   line-height: 24px;
   border-bottom: 4px double $base-color;
   padding: 12px 0;
@@ -425,12 +425,39 @@ nav {
 }
 
 // Posts
+
+.posts > .post{
+  .indextag li{
+    display: inline;
+    margin: 0;
+    font-size: 16px;
+
+    &:before{
+      content: "";
+    }
+    &:after{
+      content: "\2022";
+    }
+    a{
+      color: $base-lighten-color;
+      font-style: italic;
+    }
+    &:last-child:after{
+      content:""
+    }
+  }
+
+  h1{
+    margin: 0;
+  }
+}
+
 .posts > .post {
   padding-bottom: 2em;
   border-bottom: 1px solid $divider-color;
   min-height: 236px;
   
-  .entry{
+/*  .entry{
 
     .title-image-thumb{
       float: left;
@@ -460,7 +487,7 @@ nav {
       }
     }
 
-  }
+  } */
 }
 
 .posts > .post:last-child {
